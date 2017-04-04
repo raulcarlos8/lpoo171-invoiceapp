@@ -24,9 +24,10 @@ public class S05invoiceapp {
         
         System.out.println("Ingrese subtotal :    ");
         double subtotal = sc.nextDouble();
-        double impuesto = subtotal * 0.18;
+        double impuesto = subtotal * 0.25;
         double total = subtotal + impuesto;
-        
+        double descuento = subtotal *0.10;
+                
         String mensaje = "Total Factura:     " + total + "\n";
         System.out.println(mensaje);
     }
